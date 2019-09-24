@@ -1,0 +1,14 @@
+<?php
+require_once('../db_config.php');
+$query = "SELECT * FROM books";
+
+if($results = $db_conn->query($query)){
+    foreach($results as $result){
+        echo $result['title']." " .$result['genre'];
+        echo "<br>";
+    }
+}else{
+    echo "No Results to display.";
+}
+
+$db_conn=NULL;
