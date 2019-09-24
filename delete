@@ -1,0 +1,13 @@
+<?php
+require_once('../db_config.php');
+$query = "DELETE FROM books
+            WHERE id = 102";
+
+if($db_conn->exec($query)){
+    
+        echo "success";
+        }else{
+        echo "delete failed";
+    }
+    
+ $db_conn = NULL;
