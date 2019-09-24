@@ -1,0 +1,13 @@
+/*  Joshua K. stewart
+
+CS 325 
+14 September, 2016
+325 HW 1 - part 1
+*/
+drop table grocery_inventory;
+Create Table  grocery_inventory
+(item          char(10),
+price          int, 
+department     varchar2(10),
+primary key    (item)
+);
